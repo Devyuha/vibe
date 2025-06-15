@@ -4,7 +4,7 @@ A CLI mood tracker and personal note keeper.
 
 ## Installation
 ```bash
-npm install -g vibe
+> npm install -g @devyuha/vibe
 ```
 
 ## Usage
