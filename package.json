@@ -1,5 +1,5 @@
 {
-  "name": "devyuha/vibe",
+  "name": "@devyuha/vibe",
   "version": "1.0.0",
   "description" : "A simple CLI mood note taker",
   "main": "index.js",
@@ -18,9 +18,16 @@
     "mood taker",
     "mood logger",
     "mood logger",
-    "journal"
+    "journal",
+    "bhaswanth",
+    "devyuha",
+    "bhaswanth53"
   ],
-  "author": "",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Bhaswanth Chiruthanuru",
   "license": "MIT",
   "description": "",
   "type": "commonjs",
