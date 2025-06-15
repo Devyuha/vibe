@@ -1,0 +1,32 @@
+{
+  "name": "vibe",
+  "version": "1.0.0",
+  "description" : "A simple CLI mood note taker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "vibe": "index.js"
+  },
+  "keywords": [
+    "cli",
+    "notes",
+    "mood",
+    "sqlite",
+    "note taker",
+    "mood taker",
+    "mood logger",
+    "mood logger",
+    "journal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^14.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}
