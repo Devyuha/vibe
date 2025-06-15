@@ -1,6 +1,6 @@
 {
   "name": "@devyuha/vibe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description" : "A simple CLI mood note taker",
   "main": "index.js",
   "scripts": {
