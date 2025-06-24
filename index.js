@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 const { program } = require("commander");
-const chalk = require("chalk");
-const db = require("./db");
 
 // Controllers
 const NoteController = require("./controllers/NoteController");
@@ -16,9 +14,7 @@ program
     .command("list")
     .description("List saved notes")
     .option("-d, --date <date>", "Filter by date or use 'today'")
-    .action((options) => {
-        NoteController.listNotes(options);
-    });
+    .action(NoteController.listNotes);
 
 // Truncate tables
 program
@@ -32,9 +28,7 @@ program
 program
     .command("delete <target>")
     .description("Delete note by id or date")
-    .action((target) => {
-        NoteController.deleteNotes(target);
-    });
+    .action(NoteController.deleteNotes);
 
 
 // Add note
