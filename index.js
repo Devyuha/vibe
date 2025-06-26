@@ -1,40 +1,47 @@
 #!/usr/bin/env node
 const { program } = require("commander");
-const db = require("./db");
-const chalk = require("chalk");
 
-const addNote = require("./commands/add");
-const listNotes = require("./commands/list");
-const deleteNotes = require("./commands/delete");
+// Controllers
+const NoteController = require("./controllers/NoteController");
 
+// Program info
 program
-  .version("1.0.0")
-  .description("Vibe - A simple CLI mood note tracker");
+    .version("1.0.0")
+    .description("Vibe - A simple CLI mood note tracker");
 
+// List notes
 program
-  .command("list")
-  .description("List saved notes")
-  .option("-d, --date <date>", "Filter by date or use 'today'")
-  .action((options) => {
-    listNotes(options.date);
-  });
+    .command("list")
+    .description("List saved notes")
+    .option("-d, --date <date>", "Filter by date or use 'today'")
+    .action(NoteController.listNotes);
 
+// Truncate tables
 program
-  .command("delete <target>")
-  .description("Delete note by id or date")
-  .action((target) => {
-    deleteNotes(target);
-  });
+    .command("clear")
+    .description("Truncate all tables in db")
+    .action(() => {
+        //
+    })
 
+// Delete notes
 program
-  .arguments('[note...]')
-  .action((noteParts) => {
-    const note = noteParts.join(" ").trim();
-    if(note) {
-      addNote(note);
-    } else {
-      program.help();
-    }
-  });
+    .command("delete <target>")
+    .description("Delete note by id or date")
+    .action(NoteController.deleteNotes);
 
+
+// Add note
+program
+    .arguments('[note...]')
+    .action((noteParts) => {
+        const note = noteParts.join(" ").trim();
+        if(note) {
+            NoteController.addNote(note);
+        } else {
+            program.help();
+        }
+    });
+
+// Start program
 program.parse(process.argv);

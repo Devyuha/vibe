@@ -1,6 +1,44 @@
 # Vibe
 
-A CLI mood tracker and personal note keeper.
+A CLI tool for you to add notes, store bookmarks, manage goals and todos, etc.
+
+*Note :* The tool is still in development and not all the features are developed yet. You can find the list of features finished below.
+
+## Feature List
+
+- [x] **Notes**
+	- [x] Add
+	- [x] Delete by id
+	- [x] Delete by date
+	- [x] List all
+	- [x] List by date
+	- [x] List by current date
+- [ ] **Clear**
+	- [ ] Truncate all tables
+	- [ ] Truncate tables related to particular module
+- [ ] **Goals**
+	- [ ] Create group
+	- [ ] Add goal to group
+	- [ ] Delete item from group
+	- [ ] Delete group and its items
+	- [ ] Mark items as completed from group
+	- [ ] Mark group as completed
+	- [ ] List all groups.
+	- [ ] List all items from particular group with label or id.
+- [ ] **Bookmarks**
+	- [ ] Create group
+	- [ ] Add links to group
+	- [ ] Delete link from group
+	- [ ] Delete group
+	- [ ] List all groups and links
+	- [ ] List all links from a particular group
+- [ ] **Import & Export**
+	- [ ] Export data as SQL.
+	- [ ] Export data as JSON.
+	- [ ] Export data as CSV.
+	- [ ] Import data from SQL.
+	- [ ] Import data from JSON.
+	- [ ] Import data from CSV.
 
 ## Installation
 ```bash
@@ -10,6 +48,8 @@ A CLI mood tracker and personal note keeper.
 ## Usage
 
 To add notes, run any of the commands below :
+
+*Note :* You can add notes with or without quotes. But sometimes, special characters like `\`, `'` may be pre defined in terminal.
 
 ```bash
 > vibe "Feeline good today"
