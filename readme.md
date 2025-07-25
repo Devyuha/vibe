@@ -4,7 +4,7 @@ A CLI tool for you to add notes, store bookmarks, manage goals and todos, etc.
 
 *Note :* The tool is still in development and not all the features are developed yet. You can find the list of features finished below.
 
-## Feature List
+## Feature List / Roadmap
 
 - [x] **Notes**
 	- [x] Add
@@ -52,8 +52,8 @@ To add notes, run any of the commands below :
 *Note :* You can add notes with or without quotes. But sometimes, special characters like `\`, `'` may be pre defined in terminal.
 
 ```bash
-> vibe "Feeline good today"
-> vibe I am feeling good today
+vibe "Feeline good today"
+vibe I am feeling good today
 ```
 
 #### To list notes :
@@ -61,19 +61,19 @@ To add notes, run any of the commands below :
 To list all notes :
 
 ```bash
-> vibe list
+vibe list
 ```
 
 To list today's notes :
 
 ```bash
-> vibe list -d today
+vibe list -d today
 ```
 
 To list notes by date :
 
 ```bash
-> vibe list -d YYYY-MM-DD
+vibe list -d YYYY-MM-DD
 ```
 
 #### To delete notes :
@@ -81,12 +81,26 @@ To list notes by date :
 To delete by note id :
 
 ```bash
-> vibe delete note_id
+vibe delete note_id
 ```
 
 To delete notes by date :
 
 ```bash
-> vibe delete YYYY-MM-DD
+vibe delete YYYY-MM-DD
 ```
 
+---
+## 🤝 Contributing
+
+We welcome contributions! Whether it's a bug fix, feature, or improvement, you're welcome to open an issue or submit a pull request.
+
+📚 Please read the [CONTRIBUTING.md](CONTRIBUTING.md) guide before you get started.
+💬 Join the discussion or request features by opening [issues](https://github.com/your-username/vibe/issues).
+⭐ If you like this project, consider starring it!
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/license/MIT).
+
+You are free to use, modify, and distribute it with proper attribution.
