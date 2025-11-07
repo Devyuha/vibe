@@ -2,7 +2,7 @@
     Purpose : This is a viewer class to display messages for notes.
 */
 
-const { text, info, success, danger, primary } = require("./View");
+import { text, info, success, danger, primary } from "./View.js";
 
 class NoteView {
     static insertedNote(id) {
@@ -54,4 +54,4 @@ class NoteView {
     }
 }
 
-module.exports = NoteView;
+export default NoteView;

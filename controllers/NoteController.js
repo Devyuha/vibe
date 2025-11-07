@@ -2,11 +2,10 @@
     Purpose : This is the Notes Controller.
 */
 
-const chalk = require("chalk");
-const db = require("../db");
-const DateTime = require("../utils/DateTime");
-const NoteQuery = require("../queries/Note");
-const NoteView = require("../views/NoteView");
+import db from "../db.js";
+import DateTime from "../utils/DateTime.js";
+import NoteQuery from "../queries/Note.js";
+import NoteView from "../views/NoteView.js";
 
 class NoteController {
     // Insert notes
@@ -69,4 +68,4 @@ class NoteController {
 	}
 }
 
-module.exports = NoteController;
+export default NoteController;

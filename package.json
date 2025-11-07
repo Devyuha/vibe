@@ -32,7 +32,7 @@
   },
   "author": "Bhaswanth Chiruthanuru",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "commander": "^14.0.0",
     "sqlite3": "^5.1.7"

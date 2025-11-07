@@ -18,18 +18,9 @@ function colorize(hex) {
         `\x1b[38;2;${r};${g};${b}m${text}\x1b[0m`;
 }
 
-const text     = colorize("#A7C1A8");
-const primary  = colorize("#3674B5");
-const info     = colorize("#03A6A1");
-const warning  = colorize("#FFB823");
-const danger   = colorize("#FF3F33");
-const success  = colorize("#06923E");
-
-module.exports = {
-    text,
-    info,
-    warning,
-    danger,
-    success,
-    primary
-}
+export const text     = colorize("#A7C1A8");
+export const primary  = colorize("#3674B5");
+export const info     = colorize("#03A6A1");
+export const warning  = colorize("#FFB823");
+export const danger   = colorize("#FF3F33");
+export const success  = colorize("#06923E");
