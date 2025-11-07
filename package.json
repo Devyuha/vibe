@@ -34,7 +34,6 @@
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "chalk": "^4.1.2",
     "commander": "^14.0.0",
     "sqlite3": "^5.1.7"
   },
