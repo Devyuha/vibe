@@ -2,9 +2,17 @@
     Purpose : This is where the db configuration is written
 */
 
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
 const sqlite3 = require("sqlite3").verbose();
-const path = require("path");
-const dbPath = path.join(__dirname, "vibe.db");
+import { fileURLToPath } from "url";
+import { join, dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const dbPath = join(__dirname, "vibe.db");
 
 const db = new sqlite3.Database(dbPath);
 
@@ -22,4 +30,4 @@ db.serialize(() => {
   `)
 });
 
-module.exports = db;
+export default db;

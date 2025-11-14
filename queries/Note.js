@@ -2,7 +2,7 @@
     Purpose : This generates all queries related to notes
 */
 
-const DateTime = require("../utils/DateTime");
+import DateTime from "../utils/DateTime.js";
 
 class NoteQuery {
 	/* Generate query based on filter for listing the notes  */
@@ -66,4 +66,4 @@ class NoteQuery {
 	}	
 }
 
-module.exports = NoteQuery;
+export default NoteQuery;

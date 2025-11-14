@@ -1,6 +1,6 @@
 {
   "name": "@devyuha/vibe",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,8 @@
   },
   "author": "Bhaswanth Chiruthanuru",
   "license": "MIT",
-  "type": "commonjs",
-  "devDependencies": {
+  "type": "module",
+  "dependencies": {
     "commander": "^14.0.0",
     "sqlite3": "^5.1.7"
   },

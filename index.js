@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-const { program } = require("commander");
-
+import { program } from "commander";
 // Controllers
-const NoteController = require("./controllers/NoteController");
+import NoteController from "./controllers/NoteController.js";
 
 // Program info
 program
