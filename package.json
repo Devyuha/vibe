@@ -33,7 +33,7 @@
   "author": "Bhaswanth Chiruthanuru",
   "license": "MIT",
   "type": "module",
-  "devDependencies": {
+  "dependencies": {
     "commander": "^14.0.0",
     "sqlite3": "^5.1.7"
   },
